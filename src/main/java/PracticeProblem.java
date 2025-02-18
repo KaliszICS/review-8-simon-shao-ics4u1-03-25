@@ -7,11 +7,14 @@ public class PracticeProblem {
 public static String pluralize(String word){
 	String end;
 	word = word.toLowerCase();
-	if (word.endsWith ("ey")){
-		end = "eys";
+	if (word.endsWith ("y")){
+	
+		if (word.endsWith("ey")){
+			end = "eys";
 	}
-	else if (word.endsWith("y")){
-		end = "ies";
+		else{
+				end = "ies";
+		}
 	}
 	else if (word.endsWith("ife")){
 		end = "ives";
